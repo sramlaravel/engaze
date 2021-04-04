@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\LanguageRequest;
+use App\Http\Requests\UpdateLanguageRequest;
 use App\Models\Language;
 use App\Models\Sliders;
 use Illuminate\Http\Request;
@@ -81,7 +82,7 @@ class SliderController extends Controller
         return view('admin.Sliders.edit', compact('slider'));
     }
 
-    public function update($id, LanguageRequest $request)
+    public function update($id, UpdateLanguageRequest $request)
     {
 
         try {

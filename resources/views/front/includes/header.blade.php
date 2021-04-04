@@ -45,7 +45,7 @@
                                 {{--<li><a href="{{route('project')}}">اعمالنا</a></li>--}}
                                 <li><a href="{{route('services')}}">خدماتنا</a></li>
                                 <li><a href="{{route('about')}}">نبذه عنا</a></li>
-                                <li class="tel"><a href="tel:">00967776660524</a></li>
+                                <li class="tel"><a href="tel:"> </a></li>
                                 <li><a href="{{route('home')}}">الصفحة الرئيسية</a>
                                 </li>
 

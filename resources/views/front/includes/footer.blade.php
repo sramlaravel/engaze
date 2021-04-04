@@ -6,13 +6,13 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="subscribe">
-                    <form>
-                        <input type="text" class="form-control" placeholder=" أدخل عنوان بريدك الالكتروني....."
-                               onfocus="this.placeholder=''"
-                               onblur="this.placeholder='أدخل عنوان بريدك الالكتروني.....'">
-                        <button type="submit" class="btn btn-primary sub-btn"> الإشتراك</button>
-                    </form>
-                </div>
+                    {{--<form>--}}
+                        {{--<input type="text" class="form-control" placeholder=" أدخل عنوان بريدك الالكتروني....."--}}
+                               {{--onfocus="this.placeholder=''"--}}
+                               {{--onblur="this.placeholder='أدخل عنوان بريدك الالكتروني.....'">--}}
+                        {{--<button type="submit" class="btn btn-primary sub-btn"> الإشتراك</button>--}}
+                    {{--</form>--}}
+                {{--</div>--}}
             </div>
             <div class="col-md-12">
                 <div class="footer-information">
@@ -28,9 +28,7 @@
                     </div>
                     <div class="single-info">
                         <h5>البريد الإلكتروني:</h5>
-                        <p><a href="https://demo.voidcoders.com/cdn-cgi/l/email-protection" class="__cf_email__"
-                              data-cfemail="7b1a161a12173b161e030f091e1455181416">[email&#160;SOFTENGAZE@GMAIL.COM]</a></p>
-                        <p><a href="https://demo.voidcoders.com/cdn-cgi/l/email-protection" class="__cf_email__"
+                         <p><a href="https://demo.voidcoders.com/cdn-cgi/l/email-protection" class="__cf_email__"
                               data-cfemail="dfb1baa8b2beb6b39fb2baa7abadbab0f1bcb0b2">[email&#160;info@engazsoftplus.com]</a></p>
                     </div>
                 </div>
@@ -104,8 +102,8 @@
                     <ul>
                         <li>حقوق الطبع والنشر © 2021! <a href="https://voidcoders.com/">أنجاز شوفت لتقنية المعلومات!</a>
                         </li>
-                        
-                      
+
+
                     </ul>
                 </div>
             </div>

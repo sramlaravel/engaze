@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\LanguageRequest;
+use App\Http\Requests\UpdateLanguageRequest;
 use App\Models\Language;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -80,10 +81,11 @@ class LanguagesController extends Controller
         return view('admin.languages.edit', compact('slider'));
     }
 
-    public function update($id, LanguageRequest $request)
+    public function update($id, UpdateLanguageRequest $request)
     {
 
         try {
+
             $slider = Language::find($id);
             if (!$slider) {
                 return redirect()->route('admin.languages.edit', $id)->with(['error' => 'هذه الاسلايد غير موجوده']);

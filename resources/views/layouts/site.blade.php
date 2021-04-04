@@ -15,6 +15,11 @@
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="{{asset('assets/css/aos.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/sliders/slider-1/fonts/font-awesome/css/font-awesome.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/sliders/slider-1/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/sliders/slider-1/css/rs6.css')}}">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/font/stylesheet.css')}}">
@@ -48,11 +53,6 @@
     <link rel="stylesheet" href="{{asset('assets/css/sm-mint.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/sm-style.css')}}">
 
-    <link rel="stylesheet" href="{{asset('assets/css/aos.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/sliders/slider-1/fonts/font-awesome/css/font-awesome.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/sliders/slider-1/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/sliders/slider-1/css/rs6.css')}}">
 
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 

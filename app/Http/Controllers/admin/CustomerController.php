@@ -80,7 +80,7 @@ class CustomerController extends Controller
             return redirect()->route('admin.Customer')->with(['success' => 'تم الحفظ بنجاح']);
 
         } catch (\Exception $ex) {
-            return $ex;
+
             return redirect()->route('admin.Customer')->with(['error' => 'حدث خطا ما برجاء المحاوله لاحقا']);
 
         }
