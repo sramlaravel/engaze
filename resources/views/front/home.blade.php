@@ -110,24 +110,10 @@
                             <a href="{{route('services')}}" class="btn-1" data-aos="fade-up" data-aos-duration="3000">أعرف أكثر</a>
                     </div>
                 </div>
+
                 @endisset
 
-                <div class="col-md-5">
-                    <div class="row">
-                        @isset($Customer)
-                            @foreach($Customer as $key => $Custom)
-                                @if($key > 0)
-                        <div class="col-md-6" data-aos="fade-down-left" data-aos-duration="3000">
-                            <div class="single-service si-1">
-                                <i class="service-icon">
-                                    <img src=" {{$Custom->image}}" alt="">
-                                </i>
-                                <h3>{{$Custom->name}}</h3>
-                            </div>
-                        </div>
-                            @endif
-                        @endforeach
-                        @endisset
+
 
                         {{--<div class="col-md-6">--}}
                             {{--<div class="row">--}}
@@ -145,12 +131,48 @@
                                 {{--</div>--}}
                             {{--</div>--}}
                         {{--</div>--}}
-                    </div>
+
                 </div>
-            </div>
+
         </div>
     </section>
+  <section class="recent-project">
+      <div class="container">
+          <div class="recent-pro-top1">
+              <h2 class="rp-tittle"> </h2>
+              <h6 class="ht-tittle" data-aos="fade-right" data-aos-duration="2000"> الخدمات </h6>
 
+          </div>
+
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="project owl-carousel owl-theme">
+                      @isset($Customer)
+                      @foreach($Customer as $key => $Custom)
+                          @if($key > 0)
+                              <div class="item">
+                                  <div class="single-project" data-aos="fade-up" data-aos-duration="2500">
+                                      <div class="sp-img">
+                                          <img src=" {{$Custom->image}}" alt="">
+                                      </div>
+
+                                      <div class="sp-text">
+                                          <h3>{{$Custom->name}}</h3>
+                                          <p>{{ str_limit($Custom->description,30,'...مزيد') }}  </p>
+                                      </div>
+                                      <a href="{{route('services')}}"> <i class="flaticon-add rp-icon"></i></a>
+
+                                  </div>
+                              </div>
+                          @endif
+                      @endforeach
+                      @endisset
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </section>
 
     <section class="work-success">
         <div class="container">
@@ -181,8 +203,10 @@
         <div class="container">
             <div class="recent-pro-top">
                 <h2 class="rp-tittle">اعمالنا </h2>
-                <h6 class="ht-tittle" data-aos="fade-up" data-aos-duration="2000">منتجاتنا</h6>
-                <h2 data-aos="fade-up" data-aos-duration="3000">اعمالنا</h2>
+
+           
+                <h6 class="ht-tittle1" data-aos="fade-left" data-aos-duration="2000">منتجاتنا</h6>
+
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -205,42 +229,7 @@
                         </div>
                         @endforeach
                         @endisset
-                        {{--<div class="item">--}}
-                            {{--<div class="single-project" data-aos="fade-up" data-aos-duration="3000">--}}
-                                {{--<div class="sp-img">--}}
-                                    {{--<img src="../assets/img/slide/project2.jpg" alt="">--}}
-                                {{--</div>--}}
-                                {{--<div class="sp-text">--}}
-                                    {{--<h3>النيتروجين أبولتريسو</h3>--}}
-                                    {{--<p>التصميم, منزل</p>--}}
-                                {{--</div>--}}
-                                {{--<a href="project.html"> <i class="flaticon-add rp-icon"></i></a>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="item">--}}
-                            {{--<div class="single-project" data-aos="fade-up" data-aos-duration="3000">--}}
-                                {{--<div class="sp-img">--}}
-                                    {{--<img src="../assets/img/slide/project3.jpg" alt="">--}}
-                                {{--</div>--}}
-                                {{--<div class="sp-text">--}}
-                                    {{--<h3>النيتروجين أبولتريسو</h3>--}}
-                                    {{--<p>التصميم, منزل</p>--}}
-                                {{--</div>--}}
-                                {{--<a href="project.html"> <i class="flaticon-add rp-icon"></i></a>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="item">--}}
-                            {{--<div class="single-project" data-aos="fade-up" data-aos-duration="2500">--}}
-                                {{--<div class="sp-img">--}}
-                                    {{--<img src="../assets/img/slide/project3.jpg" alt="">--}}
-                                {{--</div>--}}
-                                {{--<div class="sp-text">--}}
-                                    {{--<h3>النيتروجين أبولتريسو</h3>--}}
-                                    {{--<p>التصميم, منزل</p>--}}
-                                {{--</div>--}}
-                                {{--<a href="project.html"><i class="flaticon-add rp-icon"></i></a>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
+
                     </div>
                 </div>
             </div>
